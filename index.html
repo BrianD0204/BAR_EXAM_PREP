@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f3f5">
+  <meta name="description" content="Bar Study Studio: original MBE practice drills, flashcards, writing practice and planning for the New York Bar Exam.">
+  <title>Bar Study Studio — New York Bar Prep</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Main navigation">
+    <div class="brand"><div class="brand-icon" aria-hidden="true">♥</div><div><strong>BAR STUDY</strong><small>YOU GOT THIS ♥</small></div></div>
+    <div class="nav-heading">WORKSPACE</div>
+    <nav id="mainNav" class="nav-list" aria-label="Sections">
+      <button data-page="dashboard" class="nav-item active" aria-current="page"><span>▦</span> Overview</button>
+      <button data-page="practice" class="nav-item"><span>◉</span> MBE Practice</button>
+      <button data-page="flashcards" class="nav-item"><span>▣</span> Flashcards</button>
+      <button data-page="writing" class="nav-item"><span>✎</span> Essay &amp; MPT Lab</button>
+      <button data-page="planner" class="nav-item"><span>☷</span> Study Planner</button>
+      <button data-page="resources" class="nav-item"><span>↗</span> Resources</button>
+    </nav>
+    <div class="sidebar-foot"><div class="tiny-dot"></div><span>Progress saved in this browser</span></div>
+  </aside>
+  <div class="content-wrap">
+    <header class="topbar">
+      <div><div class="eyebrow">NEW YORK BAR EXAM PREP</div><h1 id="pageTitle">Your study dashboard</h1></div>
+      <div class="header-actions"><span class="bank-count">280 practice questions</span><button class="theme-switch" id="themeToggle" aria-label="Switch to dark mode"><span id="themeIcon">☾</span><span id="themeText">Dark mode</span></button></div>
+    </header>
+    <main id="content" tabindex="-1" aria-live="polite"></main>
+  </div>
+</div>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
